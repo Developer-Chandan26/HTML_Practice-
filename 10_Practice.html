@@ -8,7 +8,7 @@
 <body>
     <!--Q1. Recreate the following table using HTML:-->
     <table border="black">
-        <caption>Student Information</caption>
+        <caption><b>Student Information</b></caption>
         <tr>
         <th rowspan="6">Info</th>
         <th rowspan="2">Name</th>
@@ -37,24 +37,46 @@
             <td>D</td>
             <td>Pune</td>
             <td>4</td>
-        </tr>   
+        </tr>
+
     </table>
-    <hr>
+    <br>
+    <hr><br>
 
     <!--Q2. Recreate the following form using HTML:-->
     <form action="/server">
+
     <label for="Name">Name:</label>
-    <input type="text" name="name" placeholder="Enter name"/>
-    <br>
+    <input 
+     type="text" 
+     name="name"
+     placeholder="Enter name" 
+     required
+    /><br><br>
 
     <label for="sex">Sex:</label>
-    <input type="radio" name="sex" id="male" value="Male" />
+    <input 
+     type="radio" 
+     name="sex" 
+     id="male" 
+     value="Male" 
+     required
+    />
     <label for="male">Male</label>
-    <input type="radio" name="sex" id="female" value="female" />
-    <label for="female">Female</label>
-    <br>
+
+    <input 
+     type="radio" 
+     name="sex" 
+     id="female" 
+     value="female" 
+     required
+    />
+    <label for="female">Female</label><br><br>
+
     <div>
+
      <label for="country">Country:</label>
+
      <select name="country" id="country">
         <option>Select the option</option>
         <option value="america">America</option>
@@ -65,19 +87,84 @@
         <option value="nepal">Napal</option>
         <option value="bhutan">Bhutan</option>
      </select>
+
     </div>
-    <label for="massage">Massage:</label>
     <br>
-    <textarea name="massage" id="masage" cols="30" rows="4"></textarea>
-    <br>
-        <input type="checkbox" name="newslatter" id="newslatter" />
-        <label for="newslatter">Subscribe?</label>
-        <br>
-        <button>Submit</button>
+
+    <label for="massage">Massage:</label><br>
+    <textarea 
+     name="massage" 
+     id="massage" 
+     cols="30" 
+     rows="4">
+    </textarea><br><br>
+
+    <input 
+     type="checkbox" 
+     name="Subscribe?" 
+     id="Subscribe?" 
+    />
+    <label for="Subscribe?">Subscribe?</label><br><br>
+
+        <button>Submit</button><br><br>
+
     </form>
 
     <hr>
-    <!--Q3. -->
+    <!--Q3. Recreate the following form using HTML:-->
+    <form action="/server">
+
+        <h3>Feedback form</h3>
+
+        <label for="name">Name:</label>
+        <input 
+          type="text" 
+          name="name" 
+          id="name" 
+          placeholder="Write your name" required 
+          />
+        <br><br>
+        <label for="email">Email:</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Write your email" 
+          required/>
+          <br>
+
+        <label for="massage">Massage:</label><br>
+        <textarea 
+         name="massage" 
+          id="massage" 
+          cols="35" 
+          rows="4"
+           required>
+        </textarea>
+
+        <div>
+           <label for="rate">Rate us our of 5:</label><br>
+
+
+           <input type="radio" name="rate" id="1" value="1" required />
+           <label for="1">1</label><br>
+
+           <input type="radio" name="rate" id="2" value="2" />
+           <label for="2">2</label><br>
+
+           <input type="radio" name="rate" id="3" value="3" />
+           <label for="3">3</label><br>
+
+           <input type="radio" name="rate" id="4" value="4" />
+           <label for="4">4</label><br>
+
+           <input type="radio" name="rate" id="5" value="5" />
+           <label for="5">5</label><br><br>
+
+        </div>
+        <button>Send your massage!</button>
+
+    </form>
 
 
 
