@@ -1,0 +1,92 @@
+/* Universal Selecctor 
+ * {
+  color: brown;
+  background-color:aqua;
+ }
+  */
+
+a {
+  text-decoration: none;
+}
+
+/* Element Selector */
+h1 {
+  color: red;
+  font-family: "Courier New";
+  background-color: antiquewhite;
+}
+
+/* ID Selector */
+#login {
+  background-color: rgb(222, 11, 57);
+  border-radius: 5px;
+  border-color: rgb(50, 224, 23);
+}
+#signup {
+  background-color: #41d9ae;
+  border-radius: 9px;
+  border-color: rgb(116, 12, 213);
+}
+
+/* Class Selector */
+.a {
+  color: rgb(244, 243, 243);
+  background-color: rgb(217, 20, 95);
+}
+
+/* Descendent Selecktor */
+p a {
+  color: purple;
+  background-color: yellow;
+}
+.post a {
+  background-color: blue;
+  color: antiquewhite;
+}
+
+nav li {
+  color: pink;
+}
+
+/* Adjacent Sibling Combinator */
+
+p + h2 {
+  text-decoration: underline;
+}
+.upvote + button {
+  background-color: blue;
+  color: white;
+}
+
+/* Child Combinator */
+nav ul li a {
+  color: rgb(19, 188, 61);
+  background-color: rgb(231, 239, 11);
+}
+
+/* Attribute Selector */
+/*input[type="text"] {
+  color: rgb(212, 11, 98);
+  background-color: rgb(202, 226, 43);
+}*/
+input[type] {
+  color: rgb(212, 11, 98);
+  background-color: rgb(235, 238, 8);
+}
+
+/*practicae Question Solve */
+* {
+  font-family: "Courier New";
+}
+.facebook {
+  color: #1b74e4;
+}
+
+.btn {
+  background-color: aqua;
+}
+
+#search {
+  background-color: black;
+  color: white;
+}
