@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universal selector</title>
     <link rel="stylesheet" href="02-level.css">
+    <link rel="stylesheet" href="02-part.css">
 </head>
 
 <body>
@@ -77,13 +78,13 @@
     <hr>
 
     <!--Practice Question 
-Implement the following CSS for the given html document
-1) Set font family of entire document to Courier New
-2) Set text color for all h1 heading to  id="1b74e4"
-3) Set background color of search button to black & text to write
-4) Set background color of login & signup button to aqua -->
+ Implement the following CSS for the given html document
+ 1) Set font family of entire document to Courier New
+ 2) Set text color for all h1 heading to  id="1b74e4"
+ 3) Set background color of search button to black & text to write
+ 4) Set background color of login & signup button to aqua -->
 
-    <h1 class="facebook">Facebook</h1>
+    <h1 id="facebook">Facebook</h1>
 
     <div>
         <button class="btn">log in</button>
@@ -92,9 +93,15 @@ Implement the following CSS for the given html document
     <hr>
 
     <label for="search">Search</label>
-    <input type="text" placeholder="Search your friend">
-    <button id="search">Search</button>
+    <input type="text" placeholder="Search your friend" id="search">
+    <button>Search</button>
 
+    <div>
+        <input type="radio" id="yes" name="agree" />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="agree" />
+        <label for="no">No</label>
+    </div>
 </body>
 
 </html>
