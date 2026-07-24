@@ -8,6 +8,7 @@
   /*Transition 
     transition: 0s;*/
   transition: margin-top 2s ease-out 2s;
+  box-shadow: 2px 2px 40px green;
 }
 
 #transition:hover {
@@ -23,6 +24,7 @@
   width: 300px;
   background-color: rgb(229, 132, 13);
   opacity: 0.5;
+  box-shadow: 3px 3px 10px rgb(9, 222, 165);
 }
 
 /*Transform*/
@@ -51,7 +53,18 @@
   background-color: #d99b7f;
   transform: skew(30deg);
 }
-#div5 {
+/*#div5 {
   background-color: #845449;
   transform: rotate(30deg) translate(155px);
+}*/
+
+#wallpaper {
+  height: 300px;
+  width: 500px;
+  background-color: #a56f63;
+  border: 2px solid black;
+  background-image: url("leaf.jpg");
+  background-size: cover;
+  color: aqua;
+  text-align: center;
 }
